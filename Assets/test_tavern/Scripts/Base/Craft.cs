@@ -68,6 +68,11 @@ public class Craft : Table
             else
             {
                 itemControler.GetSlot(3).SetItem(12);
+
+                for (int i = 0; i < 3; i++)
+                {
+                    itemControler.GetSlot(i).DestroyItem();
+                }
             }
         }
     }
